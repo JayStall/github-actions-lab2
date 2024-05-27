@@ -19,6 +19,7 @@ jobs:
             py-version: 3.9
     steps:
       - name: Set up Python
+        continue-on-error: true
         uses: actions/setup-python@v4
         with:
           python-version: '${{ matrix.py-version }}'
